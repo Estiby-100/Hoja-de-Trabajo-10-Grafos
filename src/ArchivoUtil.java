@@ -15,12 +15,6 @@ public class ArchivoUtil {
             while ((linea = lector.readLine()) != null) {
                 numeroLinea++;
 
-                // Ignorar lineas vacias o comentarios (que empiecen con #)
-                linea = linea.trim();
-                if (linea.isEmpty() || linea.startsWith("#")) {
-                    continue;
-                }
-
                 String[] partes = linea.split(",");
                 
                 if (partes.length != 3) {
